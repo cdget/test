@@ -1,0 +1,57 @@
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  float:left;
+  padding: 0; 
+  margin: 20px; 
+  border: 1px solid #181818;
+}
+
+tr td { 
+  width: 80px; 
+  height: 80px; 
+  boder:0;
+  position:relative;
+}
+
+tr:nth-child(2n) td:nth-child(2n+1) { 
+  background: #9f9f9f; 
+}
+
+tr:nth-child(2n+1) td:nth-child(2n) { 
+  background: #9f9f9f; 
+} 
+
+.fromCell div {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: absolute;
+    z-index:1000;
+    top: 0;
+    left: 0;
+}
+
+.fromCell div:after{  
+  content: "\265E";
+  font-size: 80px;
+  position: absolute;
+  top: -25px;
+  left: 0;
+} 
+
+.variants:after{  
+  content: "\265E";
+  font-size: 80px;
+  opacity:0.4;
+  position: absolute;
+  top: -25px;
+  left: 0;
+} 
