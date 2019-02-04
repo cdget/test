@@ -1,4 +1,4 @@
-FROM chess:1.0
+FROM test:1atest
 
 # Create app directory
 WORKDIR /app
